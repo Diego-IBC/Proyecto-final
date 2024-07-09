@@ -19,9 +19,8 @@ def run_simulation():
   
     personas = Persona.leer_csv_y_crear_personas('ciudadanos.csv', covid)
 
-   
-    Comunidad.conectar_personas(personas, max_conocidos= 8)
     comunidades = Comunidad.generar_comunidades(personas, max_personas_por_comunidad=100)
+    Comunidad.conectar_personas(personas, max_conocidos= 8)
 
    
     todas_las_personas = []
