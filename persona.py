@@ -21,7 +21,7 @@ class Persona:
 
     def recuperar(self):
         if self.estado == 'infectado':
-            self.estado = 'inmune'
+            self.estado = 'Recuperado'
 
     @classmethod
     def leer_csv_y_crear_personas(cls, archivo_csv, enfermedad):
